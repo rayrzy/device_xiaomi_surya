@@ -102,6 +102,9 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-pr
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
+# Memory Config
+MALLOC_SVELTE := true
+
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 
