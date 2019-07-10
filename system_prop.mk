@@ -8,6 +8,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
+
 # Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q6150-17263-1
