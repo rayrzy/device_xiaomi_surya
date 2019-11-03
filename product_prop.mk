@@ -41,7 +41,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.ims.disableADBLogs=1 \
     persist.vendor.ims.disableDebugLogs=1 \
     persist.vendor.ims.disableIMSLogs=1 \
-    persist.vendor.ims.disableQXDMLogs=1
+    persist.vendor.ims.disableQXDMLogs=1 \
+    persist.vendor.data.iwlan.enable=true \
+    ro.telephony.iwlan_operation_mode=legacy
 
 # WFD
 PRODUCT_PRODUCT_PROPERTIES += \
