@@ -110,6 +110,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Notch style overlay
+PRODUCT_PACKAGES += \
+    NotchNoFillOverlay
+
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
