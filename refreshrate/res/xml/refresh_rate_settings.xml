@@ -27,7 +27,7 @@
             android:title="@string/device_refresh_rate"
             android:entries="@array/device_refresh_rates"
             android:entryValues="@array/device_refresh_rates_val"
-            android:defaultValue="2" />
+            android:defaultValue="3" />
 
     </PreferenceCategory>
 
