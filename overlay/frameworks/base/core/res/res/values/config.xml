@@ -150,7 +150,7 @@
     <integer name="config_bluetooth_tx_cur_ma">33</integer>
 
     <!-- TBD -->
-    <bool name="config_dozeAfterScreenOffDefault">true</bool>
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
     <bool name="config_smartChargingAvailable">true</bool>
     <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_smartChargingSuspendValue" translatable="false">1</string>
