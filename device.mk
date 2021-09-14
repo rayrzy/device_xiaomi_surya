@@ -157,3 +157,7 @@ PRODUCT_BOOT_JARS += \
 # Thetering offload
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
