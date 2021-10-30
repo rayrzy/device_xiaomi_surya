@@ -418,4 +418,7 @@
           manually by the user. Off by default, since the expected haptic feedback may not be
           available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
+
+    <!-- Whether camera shutter sound is forced or not  (country specific). -->
+    <bool name="config_camera_sound_forced">false</bool>
 </resources>
