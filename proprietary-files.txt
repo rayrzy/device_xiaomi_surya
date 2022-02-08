@@ -144,13 +144,21 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
+lib/libmm-omxcore.so
+lib/libOmxCore.so
 lib/libOmxMux.so
+lib/libOmxVdec.so
+lib/libplatformconfig.so
 lib64/libFileMux.so
 lib64/libmmosal.so
 lib64/libmmparser_lite.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
+lib64/libmm-omxcore.so
+lib64/libOmxCore.so
 lib64/libOmxMux.so
+lib64/libOmxVdec.so
+lib64/libplatformconfig.so
 
 # NFC 
 etc/permissions/com.nxp.nfc.xml
