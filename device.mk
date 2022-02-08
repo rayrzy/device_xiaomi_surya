@@ -8,7 +8,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -48,6 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BluetoothQti \
     libbtconfigstore
+
+# Boot animation sizes
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -111,7 +114,7 @@ PRODUCT_COPY_FILES += \
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
-    FrameworksResTarget 
+    FrameworksResTarget
 
 # Power
 PRODUCT_PACKAGES += \
@@ -157,4 +160,3 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
-
