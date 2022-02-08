@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -109,7 +111,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/handheld_core_hardware.xml
+    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/handheld_core_hardware.xml
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
@@ -158,5 +160,3 @@ PRODUCT_BOOT_JARS += \
 # Thetering offload
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0
-
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)

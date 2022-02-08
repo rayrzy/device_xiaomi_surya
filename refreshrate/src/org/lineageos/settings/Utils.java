@@ -23,16 +23,11 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 
 public class Utils {
-
-
-    
-    
-    
     public static int getRefreshRate(Context context) {
         SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
         return sharedPref.getInt("refresh_rate", 2);
-    }    
-    
+    }
+
     public static final void setRefreshRate(int v) {
         Parcel data = Parcel.obtain();
         data.writeInterfaceToken("android.ui.ISurfaceComposer");

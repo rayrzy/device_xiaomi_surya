@@ -8,19 +8,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
-#Netflix custom property
+# Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.netflix.bsp_rev=Q6150-17263-1
+    ro.netflix.bsp_rev=Q6150-17263-1
 
 # Set stock DPI
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.lcd_density=400
+    ro.sf.lcd_density=400
 
-#system props for the MM modules
+# System props for the MM modules
 PRODUCT_PROPERTY_OVERRIDES += \
-	vendor.mm.enable.qcom_parser=131071983
+    vendor.mm.enable.qcom_parser=131071983
 
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
-     persist.device_config.runtime_native.usap_pool_enabled=true
-
+    persist.device_config.runtime_native.usap_pool_enabled=true

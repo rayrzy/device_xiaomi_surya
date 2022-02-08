@@ -35,4 +35,3 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_
 LOCAL_MODULE_STEM :=  android.hardware.power@1.2-service.rc
 LOCAL_SRC_FILES := android.hardware.power@1.2-service.rc
 include $(BUILD_PREBUILT)
-
