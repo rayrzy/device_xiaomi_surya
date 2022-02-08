@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<!-- UI stuff -->
+    <!-- UI stuff -->
     <bool name="config_allowAllRotations">true</bool>
     <bool name="config_showNavigationBar">true</bool>
     <bool name="config_unplugTurnsOnScreen">true</bool>
     <integer name="config_multiuserMaxRunningUsers">3</integer>
 
-<!-- Brightness -->
+    <!-- Brightness -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
     <integer name="config_screenBrightnessDoze">8</integer>
@@ -141,22 +141,22 @@
         <item>4500</item>
     </integer-array>
 
-<!-- Bluetooth -->
-     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+    <!-- Bluetooth -->
+    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
     <integer name="config_bluetooth_idle_cur_ma">3</integer>
     <integer name="config_bluetooth_operating_voltage_mv">3700</integer>
     <integer name="config_bluetooth_rx_cur_ma">20</integer>
     <integer name="config_bluetooth_tx_cur_ma">33</integer>
 
-<!-- TBD -->
+    <!-- TBD -->
     <bool name="config_dozeAfterScreenOffDefault">true</bool>
     <bool name="config_smartChargingAvailable">true</bool>
     <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_smartChargingSuspendValue" translatable="false">1</string>
     <string name="config_smartChargingResumeValue" translatable="false">0</string>
 
-<!-- SysInfo -->
+    <!-- SysInfo -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
     <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
@@ -166,8 +166,7 @@
     <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 
-
-<!-- VoLTE, carrier... -->
+    <!-- VoLTE, carrier... -->
     <bool name="config_carrier_volte_available">true</bool>
     <bool name="config_device_volte_available">true</bool>
     <bool name="config_carrier_volte_tty_supported">true</bool>
@@ -187,25 +186,21 @@
         <item>7,1</item>
     </string-array>
 
-
-<!-- Multi User -->
+    <!-- Multi User -->
     <bool name="config_enableMultiUserUI">true</bool>
     <integer name="config_multiuserMaximumUsers">3</integer>
 
-
-<!-- WIFI DIsplay -->
-     <bool name="config_enableWifiDisplay">true</bool> <!-- check file -->
+    <!-- WiFi Display -->
+    <bool name="config_enableWifiDisplay">true</bool> <!-- check file -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-
-<!-- Power, doze and sleep -->
+    <!-- Power, doze and sleep -->
     <bool name="config_lidControlsSleep">true</bool>
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
     <bool name="config_displayBlanksAfterDoze">true</bool>
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
-
-<!-- Hardware Display and LED -->
+    <!-- Hardware Display and LED -->
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
     <bool name="config_setColorTransformAccelerated">true</bool>
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -224,7 +219,7 @@
     <array name="config_displayWhiteBalanceLowLightAmbientBiases" />
     <array name="config_displayWhiteBalanceLowLightAmbientBrightnesses" />
 
-<!-- Audio -->
+    <!-- Audio -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
@@ -233,7 +228,7 @@
     <fraction name="config_prescaleAbsoluteVolume_index2">75.000015%</fraction>
     <fraction name="config_prescaleAbsoluteVolume_index3">95.00001%</fraction>
 
-<!-- WIFI and Network -->
+    <!-- WiFi and Network -->
     <bool name="config_wifi_background_scan_support">true</bool>
     <bool name="config_wifi_batched_scan_supported">true</bool>
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
@@ -291,8 +286,7 @@
     <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
     <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
   
-
-<!-- Tethering -->
+    <!-- Tethering -->
     <string name="wifi_tether_configure_ssid_default">Poco X3</string>
     <string-array name="config_tether_bluetooth_regexs">
         <item>bnep\\d</item>
@@ -337,7 +331,7 @@
 	<item>"wlan\\d"</item>
     </string-array>
 
-<!-- GPS -->
+    <!-- GPS -->
     <string-array name="config_ephemeralResolverPackage">
         <item>com.google.android.gms</item>
     </string-array>
@@ -345,7 +339,13 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
-<!-- Packages and components -->
+    <!-- Whether device has screen with higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">true</bool>
+
+    <!-- Packages and components -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/arm64/boot-framework.oat"</item>
         <item>"/system/framework/framework.jar"</item>

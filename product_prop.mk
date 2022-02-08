@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
 # ADB
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # /vendor/default.prop is force-setting ro.adb.secure=1
@@ -47,4 +48,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
-

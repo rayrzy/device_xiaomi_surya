@@ -62,9 +62,9 @@ void property_override(char const prop[], char const value[], bool add = true) {
     __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void set_ro_build_prop(const std::string &source, 
+void set_ro_build_prop(const std::string &source,
                        const std::string &prop,
-                       const std::string &value, 
+                       const std::string &value,
                        bool product = false) {
 	std::string prop_name;
 
@@ -76,10 +76,10 @@ void set_ro_build_prop(const std::string &source,
 	property_override(prop_name.c_str(), value.c_str(), false);
 }
 
-void set_device_props(const std::string fingerprint, 
+void set_device_props(const std::string fingerprint,
                       const std::string description,
-                      const std::string brand, 
-                      const std::string device, 
+                      const std::string brand,
+                      const std::string device,
                       const std::string model) {
 	for (const auto &source : ro_props_default_source_order) {
 		set_ro_build_prop(source, "fingerprint", fingerprint);
@@ -92,25 +92,25 @@ void set_device_props(const std::string fingerprint,
 
 void load_device_properties() {
 	std::string hwname = GetProperty("ro.boot.hwname", "");
-	
+
 	// Set some defaults to avoid empty settings:
 	std::string model = "M2007J20CG";
 	std::string device = hwname;
 	std::string fingerprint = "POCO/surya_global/surya:10/QKQ1.200512.002/V12.0.7.0.QJGMIXM:user/release-keys";
 	std::string description = "surya_global-user 10 QKQ1.200512.002 V12.0.7.0.QJGMIXM release-keys";
-	
+
 	if (hwname == "surya") {
 	} else if (hwname == "karna") {
 		model = "M2007J20CI";
 	        fingerprint = "POCO/karna_global/karna:10/QKQ1.200512.002/V12.0.9.0.QJGMIXM:user/release-keys";
 	        description = "karna_global-user 10 QKQ1.200512.002 V12.0.9.0.QJGMIXM release-keys";
 	}
-      
-      	set_device_props(fingerprint, 
-		         description, 
-		         "Poco", 
-		         device, 
-		         model ); 
+
+      	set_device_props(fingerprint,
+		         description,
+		         "Poco",
+		         device,
+		         model );
 }
 
 void set_nfc()
@@ -121,8 +121,8 @@ void set_nfc()
 	// Valid options are "karna" and "surya"
 	if (hwname == "karna"){
 		enable_nfc = false;
-	} 
-    
+	}
+
         property_override( "ro.hw.nfc", enable_nfc ? "1" : "0" );
 }
 
@@ -154,9 +154,8 @@ void set_dalvik_values()
 }
 
 void vendor_load_properties()
-{ 
+{
 	load_device_properties();
 	set_dalvik_values();
 	set_nfc();
 }
-
