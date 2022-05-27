@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_surya.mk
+    $(LOCAL_DIR)/xtended_surya.mk
