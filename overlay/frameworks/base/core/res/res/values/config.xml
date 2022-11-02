@@ -398,8 +398,9 @@
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">24.0dip</dimen>
-    <dimen name="status_bar_height_landscape">24.0dip</dimen>
+    <dimen name="status_bar_height_portrait">98px</dimen>
+    <dimen name="status_bar_height_default">28dp</dimen>
+    <dimen name="status_bar_height_landscape">@dimen/status_bar_height_portrait</dimen>
 
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
